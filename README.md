@@ -2,7 +2,7 @@
 
 - [GraphTopic](#graphtopic)
   - [Introduction to GraphTopic](#introduction-to-graphtopic)
-  - [Instructions on How to Create and Run the Environment](#instructions-on-how-to-create-and-run-the-environment)
+  - [Running GraphTopic in a Virtual Environment](#running-graphtopic-in-a-virtual-environment)
   - [Usage](#usage)
     - [Basic Example](#basic-example)
     - [Class `GraphTopic`](#class-graphtopic)
@@ -29,9 +29,7 @@ This method excels at discovering nuanced topic structures by:
 3. **Merging Latent Topics:** Iteratively processes documents, merging related trivial topics based on shared keyphrases and semantic similarity. This forms a graph of interconnected topics.
 4. **Final Topic Aggregation:** Merges semantically close latent topics using sentence embeddings to produce a concise and comprehensive set of final topics.
 
-## Instructions on How to Create and Run the Environment
-
-To set up the environment for running GraphTopics, follow these steps:
+## Running GraphTopic in a Virtual Environment
 
 1. **Clone the Repository**:
    ```bash
@@ -76,6 +74,7 @@ To set up the environment for running GraphTopics, follow these steps:
 6. **Run a sample example**:
    To execute the tests and see the results, run:
    ```bash
+   venv\Scripts\activate
    python runner.py
    ```
 
