@@ -8,7 +8,7 @@
     - [Class `GraphTopic`](#class-graphtopic)
       - [`__init__(self, docs, TopM=500, TopN=10, keyphrase_extractor=getKeyPhrasesUsingKeyBERT, embedding_model=embeddingModel, pretty_print=False, prune_node_count_less_than=2, overlapping_threshold=0.5, max_topics=float("inf"), max_keyphrases_per_topic=100, keyphrases_selection_strategy=KeyphrasesSelectionStrategy.CDIST)`](#__init__self-docs-topm500-topn10-keyphrase_extractorgetkeyphrasesusingkeybert-embedding_modelembeddingmodel-pretty_printfalse-prune_node_count_less_than2-overlapping_threshold05-max_topicsfloatinf-max_keyphrases_per_topic100-keyphrases_selection_strategykeyphrasesselectionstrategycdist)
       - [`get_topics(self) -> List[List]`](#get_topicsself---listlist)
-  - [Comparison of GraphTopic with Other Models](#comparison-of-graphtopic-with-other-models)
+  - [Evaluation of GraphTopic](#evaluation-of-graphtopic)
     - [**Datasets Used**](#datasets-used)
     - [**Topic Modeling Methods Evaluated**](#topic-modeling-methods-evaluated)
     - [**Evaluation Metrics**](#evaluation-metrics)
