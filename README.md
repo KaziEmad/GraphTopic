@@ -126,7 +126,7 @@ Here's a basic example demonstrating how to use the `GraphTopic` class:
     * **Description:**  Specifies the number of top keyphrases to extract from each individual document. These document keyphrases are used to merge and refine the trivial topics into latent topics. A lower `TopN` value may result in broader, more general latent topics.
 * **`keyphrase_extractor` (Callable[[str, int], List[Tuple[str, float]]], optional)**:
     * **Default:** `getKeyPhrasesUsingKeyBERT`
-    * **Description:** A function responsible for extracting keyphrases from a given text. It should accept the text and the desired number of keyphrases (`n`) as input and return a list of tuples, where each tuple contains a keyphrase (string) and its associated weight (float). You can provide a custom keyphrase extraction function if needed, conforming to this signature.
+    * **Description:** A function responsible for extracting keyphrases from a given text. It should accept the text and the desired number of keyphrases (`n`) as input and return a list of tuples, where each tuple contains a keyphrase (string) and its associated weight (float) (optional). You can provide a custom keyphrase extraction function if needed, conforming to this signature.
     * **Example Function Signature:**
         ```python
         def getKeyPhrases(text, n):
@@ -167,7 +167,7 @@ Here's a basic example demonstrating how to use the `GraphTopic` class:
 * **`List[List]`**: A list of final topics. Each topic is represented as a list of keyphrases (strings). If `max_topics` is specified in the constructor, each topic will contain at most `max_keyphrases_per_topic` keyphrases, selected according to the `keyphrases_selection_strategy`.
 
 
-## Comparison of GraphTopic with Other Models
+## Evaluation of GraphTopic 
 
 The objective is to evaluate the performance of multiple topic extraction techniques and compare their effectiveness using various metrics.
 The `test-runner.py` script provides a comprehensive comparison of different topic modeling techniques, including:
