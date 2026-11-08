@@ -1,0 +1,91 @@
+{
+  "params": {
+    "baseline_epochs": 100,
+    "baseline_max_features": 3000,
+    "baseline_models": [
+      "LDA",
+      "NMF",
+      "HDP",
+      "LSI",
+      "ProdLDA",
+      "HyperMiner",
+      "BERTopic",
+      "ECRTM",
+      "FASTopic"
+    ],
+    "baseline_num_topics": 10,
+    "baseline_num_words": 10,
+    "dataset_name": "SetFit/bbc-news",
+    "doc_chunk_size": 2225,
+    "fixed_doc_chunk_size": {
+      "SetFit/20_newsgroups": 3768,
+      "SetFit/bbc-news": 2225,
+      "TrumpTweet": 11314
+    },
+    "hyperparam_multi_objective_metrics": [
+      "c_npmi",
+      "intra_similarity_avg"
+    ],
+    "hyperparam_multi_objective_weights": [
+      0.75,
+      0.25
+    ],
+    "hyperparam_n_startup_trials": 8,
+    "hyperparam_n_trials": 30,
+    "hyperparam_optimization_enabled": true,
+    "hyperparam_use_multi_objective": true,
+    "n_equal_chunks": 5,
+    "ngram_range": [
+      2,
+      3
+    ],
+    "optimize_hyperparams": {
+      "TopM": true,
+      "TopN": true,
+      "overlapping_threshold": true
+    },
+    "param_space": {
+      "TopM": {
+        "choices": [
+          500,
+          1000,
+          1500
+        ],
+        "type": "categorical"
+      },
+      "TopN": {
+        "choices": [
+          10,
+          15,
+          20
+        ],
+        "type": "categorical"
+      },
+      "overlapping_threshold": {
+        "choices": [
+          0.35,
+          0.5,
+          0.75
+        ],
+        "type": "categorical"
+      }
+    },
+    "report_metrics": [
+      "c_npmi",
+      "c_v",
+      "u_mass",
+      "c_uci",
+      "intra_similarity_avg",
+      "inter_distances_avg",
+      "semantic_coherence"
+    ],
+    "smoke": false,
+    "smoke_max_chunks": null
+  },
+  "source_hashes": {
+    "aggregation": "eb09123c8e17b15b2b4db2a9c616076d339be62ef17b31a1d36b05b01037b6f4",
+    "chunking": "8740b60793795ed5b6c8b5284fb8e4a005b71c7426c7ec2fa2e6183590f7398b",
+    "cleaning": "8de4c3dded53596f8d385e375b3ed68365a61ac07e09a22c94ddb351fbb71442",
+    "model_entrypoints": "fb12a980effbac95a3a7071df757c8319b5939b668146a072e111351535ee1a0"
+  }
+}

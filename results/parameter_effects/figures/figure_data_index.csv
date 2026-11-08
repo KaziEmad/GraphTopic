@@ -1,0 +1,14 @@
+figure,pdf,png,csv,description,section
+fig1_sensitivity,figures/fig1_sensitivity.pdf,figures/fig1_sensitivity.png,figures/fig1_sensitivity.csv,Normalised score vs TopM / TopN / threshold (aggregate mean ± std),main
+fig2_effect_stability,figures/fig2_effect_stability.pdf,figures/fig2_effect_stability.png,figures/fig2_effect_stability.csv,(a) Spearman importance; (b) CV of best-per-group hyperparameter,main
+fig3_pairwise_landscape,figures/fig3_pairwise_landscape.pdf,figures/fig3_pairwise_landscape.png,figures/fig3_pairwise_landscape.csv,Aggregate contour of normalised score for each hyperparameter pair,main
+fig4_cost_by_param,figures/fig4_cost_by_param.pdf,figures/fig4_cost_by_param.png,figures/fig4_cost_by_param.csv,Wall-time distributions by TopM / TopN / threshold (Optuna trials),main
+fig5_cost_comparison,figures/fig5_cost_comparison.pdf,figures/fig5_cost_comparison.png,figures/fig5_cost_comparison.csv,(a) Mean wall time per model; (b) Optuna score vs runtime with Pareto front,main
+supp_stability_violin,supplementary/supp_stability_violin.pdf,supplementary/supp_stability_violin.png,supplementary/supp_stability_violin.csv,Distribution of best-per-group hyperparameter values by dataset,supplementary
+supp_score_by_bin,supplementary/supp_score_by_bin.pdf,supplementary/supp_score_by_bin.png,supplementary/supp_score_by_bin.csv,Binned mean±std normalised score vs each hyperparameter,supplementary
+supp_heatmap,supplementary/supp_heatmap.pdf,supplementary/supp_heatmap.png,supplementary/supp_heatmap.csv,Best hyperparameter value heatmap (dataset × chunk),supplementary
+supp_by_chunk,supplementary/supp_by_chunk.pdf,supplementary/supp_by_chunk.png,supplementary/supp_by_chunk.csv,Sensitivity curves stratified by chunk index,supplementary
+supp_by_dataset,supplementary/supp_by_dataset.pdf,supplementary/supp_by_dataset.png,supplementary/supp_by_dataset.csv,Sensitivity curves stratified by dataset,supplementary
+supp_top20_pairs,supplementary/supp_top20_pairs.pdf,supplementary/supp_top20_pairs.png,supplementary/supp_top20_pairs.csv,Top-20% trials in each hyperparameter pair plane,supplementary
+supp_per_dataset_contour,supplementary/supp_per_dataset_contour.pdf,supplementary/supp_per_dataset_contour.png,supplementary/supp_per_dataset_contour.csv,Per-dataset contour for pair TopM×TopN (first 3 datasets),supplementary
+supp_3d_surface,supplementary/supp_3d_surface.pdf,supplementary/supp_3d_surface.png,supplementary/supp_3d_surface.csv,3D surface of normalised score for TopM×TopN,supplementary

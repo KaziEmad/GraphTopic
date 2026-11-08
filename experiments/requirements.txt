@@ -1,0 +1,11 @@
+# Extra packages for the experiments in this folder (on top of ../requirements.txt).
+# full_dataset_comparison_v1.py also installs missing packages itself on first run
+# (AUTO_INSTALL_DEPENDENCIES = True).
+optuna
+topmost
+psutil
+gdown
+datasets>=3.0,<4.0
+sentence-transformers[onnx]
+seaborn
+git+https://github.com/boudinfl/pke.git

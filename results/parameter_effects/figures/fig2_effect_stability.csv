@@ -1,0 +1,7 @@
+panel,label,value,error,n,metric
+a,TopM,-0.0831372,,,spearman_rho
+a,TopN,-0.108013,,,spearman_rho
+a,overlapping_threshold,-0.200723,,,spearman_rho
+b,TopM,0.465475,,30,stability_cv
+b,TopN,0.312889,,30,stability_cv
+b,overlapping_threshold,0.315927,,30,stability_cv

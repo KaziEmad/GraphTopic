@@ -1,0 +1,98 @@
+{
+  "SetFit/20_newsgroups": {
+    "pairs": 153,
+    "ovl_3d": {
+      "spearman": 0.6466696979256394,
+      "spearman_p": 1.7323379668400855e-19,
+      "pearson": 0.7153478122421717,
+      "pearson_p": 2.8111530983918383e-25
+    },
+    "knn_mix_768d": {
+      "spearman": 0.16282734670865412,
+      "spearman_p": 0.044326807209318426,
+      "pearson": 0.16163029160178383,
+      "pearson_p": 0.04593340137786101
+    },
+    "cos_centroid_768d": {
+      "spearman": 0.5739836690142154,
+      "spearman_p": 8.758552420530412e-15,
+      "pearson": 0.3272186757525679,
+      "pearson_p": 3.6510851095635064e-05
+    },
+    "decision_agreement_vs_ovl_3d": 1.0,
+    "cohen_kappa_vs_ovl_3d": null,
+    "merged_pairs_1d": 0
+  },
+  "SetFit/bbc-news": {
+    "pairs": 950,
+    "ovl_3d": {
+      "spearman": 0.7318114097484856,
+      "spearman_p": 4.7710104904199296e-160,
+      "pearson": 0.5061322249781545,
+      "pearson_p": 6.115280584827883e-63
+    },
+    "knn_mix_768d": {
+      "spearman": -0.27614675642355285,
+      "spearman_p": 4.346630666346187e-18,
+      "pearson": -0.019162925794709757,
+      "pearson_p": 0.5552459087450635
+    },
+    "cos_centroid_768d": {
+      "spearman": 0.6327026205887772,
+      "spearman_p": 2.2281860301540884e-107,
+      "pearson": 0.4157510995615146,
+      "pearson_p": 5.341062883780259e-41
+    },
+    "decision_agreement_vs_ovl_3d": 0.9663157894736842,
+    "cohen_kappa_vs_ovl_3d": 0.1075622357914513,
+    "merged_pairs_1d": 34
+  },
+  "TrumpTweet": {
+    "pairs": 3000,
+    "ovl_3d": {
+      "spearman": 0.6055531815559174,
+      "spearman_p": 9.98165026599636e-300,
+      "pearson": 0.22987666844310484,
+      "pearson_p": 2.8561411626461647e-37
+    },
+    "knn_mix_768d": {
+      "spearman": -0.3595921357872742,
+      "spearman_p": 2.9160406737817078e-92,
+      "pearson": 0.015878751600079722,
+      "pearson_p": 0.38462433676618835
+    },
+    "cos_centroid_768d": {
+      "spearman": 0.5625258450628197,
+      "spearman_p": 5.593317352745153e-250,
+      "pearson": 0.3264508772132948,
+      "pearson_p": 1.9412151701326187e-75
+    },
+    "decision_agreement_vs_ovl_3d": 0.9943333333333333,
+    "cohen_kappa_vs_ovl_3d": 0.0,
+    "merged_pairs_1d": 17
+  },
+  "ALL": {
+    "pairs": 4103,
+    "ovl_3d": {
+      "spearman": 0.6417670967677984,
+      "spearman_p": 0.0,
+      "pearson": 0.4267000903502416,
+      "pearson_p": 3.062536670009606e-181
+    },
+    "knn_mix_768d": {
+      "spearman": -0.3359024704598984,
+      "spearman_p": 9.036425121672408e-109,
+      "pearson": -0.009516857795017231,
+      "pearson_p": 0.542241322642154
+    },
+    "cos_centroid_768d": {
+      "spearman": 0.5728298526031699,
+      "spearman_p": 0.0,
+      "pearson": 0.34752490793058505,
+      "pearson_p": 8.556193880806619e-117
+    },
+    "decision_agreement_vs_ovl_3d": 0.988057518888618,
+    "cohen_kappa_vs_ovl_3d": 0.07460357644242932,
+    "merged_pairs_1d": 51
+  }
+}

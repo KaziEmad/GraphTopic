@@ -1,0 +1,4 @@
+param,default_mean,default_median,iqr_p25,iqr_p75,spearman_rho,p_value,stability_cv,stability_median
+TopM,982.04,1000,500,1500,-0.083137,0.043172,0.46547,1000
+TopN,14.581,15,10,20,-0.10801,0.0085329,0.31289,15
+overlapping_threshold,0.49521,0.5,0.35,0.75,-0.20072,8.4933e-07,0.31593,0.5

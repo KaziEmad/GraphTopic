@@ -1,0 +1,7 @@
+param,dataset,x,mean_norm_score,std_norm_score,n_trials
+TopM,aggregate,533.333,0.705665,0.331216,-1
+TopM,aggregate,1000,0.511944,0.314467,-1
+TopN,aggregate,10.3333,0.668412,0.341789,-1
+TopN,aggregate,15,0.616022,0.316634,-1
+overlapping_threshold,aggregate,0.363333,0.726011,0.307723,-1
+overlapping_threshold,aggregate,0.496667,0.557746,0.330689,-1
