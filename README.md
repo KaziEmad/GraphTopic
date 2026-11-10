@@ -59,7 +59,6 @@ GraphTopic/
 │   ├── projection_check.py             # checks the 1-D overlap omega against full-space measures
 │   ├── visualize_projections_standalone.py
 │   ├── check_coherence_equivalence.py  # verifies the memory fix leaves coherence unchanged
-│   ├── FIXES_NOTE.md                   # fixes applied during the runs (read before re-running)
 │   ├── tweets_01-08-2021.csv           # Trump tweets used in the experiments
 │   └── requirements.txt
 │
@@ -142,7 +141,6 @@ python projection_check.py                          # projection check (after th
 * Outputs go to `experiments/hyperparameter_analysis_results/full_comparison_v1/`.
 * The script **caches** every chunk result and every Optuna study, and resumes where it stopped. To reuse our results instead of recomputing them, copy `results/full_comparison_v1/` to `experiments/hyperparameter_analysis_results/full_comparison_v1/` first. The cache is keyed on a hash of the configuration, so any change to the settings triggers a re-run.
 * The script contains a self-contained copy of the GraphTopic algorithm and the evaluation metrics. A run therefore does not depend on later edits to the package.
-* Read [`experiments/FIXES_NOTE.md`](experiments/FIXES_NOTE.md) before you re-run. It lists the fixes applied during our runs: memory use on NIPS, TopMost GPU device placement, the FASTopic vocabulary, and the retrying of failed chunks.
 * **Not included:** the scripts that produced `results/scalability/` and `results/parameter_effects/` are not in this repository; only their outputs are. The settings used are documented in Sections 8 and 9.
 
 Full runs are long. GraphTopic tuning alone took 94.9 h of compute over 30 chunks (Section 8).
@@ -498,7 +496,7 @@ $\omega$ preserves the ordering of the full 3-D overlap well (ρ ≈ 0.6–0.7),
 * **Number of topics.** GraphTopic decides the number of topics itself, up to 10. On some datasets it returns fewer: on average 2.0 on PubMed, 3.8 on RTL-Wiki, 6.6 on IMDB, and 6.8 on NIPS. HyperMiner returns 2 topics and BERTopic 9. Fewer, larger topics can raise coherence and intra-topic similarity, so compare `num_topics` in the CSVs when you interpret the scores.
 * **Inter-topic distance** is the one metric on which GraphTopic is never best.
 * **BERTopic** produced a non-finite $C_{NPMI}$ on some chunks; its averages use the finite chunks only (3 of 4 on 20NG, 2 of 5 on Trump).
-* Coherence uses texts rebuilt from bag-of-words. This affects the sliding-window measures ($C_V$, $C_{UCI}$, $C_{NPMI}$) for all models equally (see `FIXES_NOTE.md`).
+* Coherence uses texts rebuilt from bag-of-words. This affects the sliding-window measures ($C_V$, $C_{UCI}$, $C_{NPMI}$) for all models equally.
 * Runtimes come from one run per chunk on a single shared machine. Peak memory is recorded in the CSVs but is noisy.
 * GraphTopic is tuned per chunk while the baselines use defaults. The tuning cost is reported separately (Section 8), and the robust default $(1000, 15, 0.50)$ is provided for an untuned setting.
 
